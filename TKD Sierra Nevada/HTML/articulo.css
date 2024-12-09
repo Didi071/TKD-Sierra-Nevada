@@ -1,0 +1,221 @@
+:root {
+    --dorado: #fbc83f;
+    --blancoroto: #f5f5f5;
+    --colorfuente: #333;
+    --negro: #000;
+    --tamaño-fuente-base: 16px;
+    --tamaño-fuente-subtitulos: 2em;
+    --tamaño-fuente-titulo: 4em;
+    --fuente-base: "Scheherazade New", serif;
+    --fuente-titulo: "Anta", sans-serif;
+}
+
+/* Reset y base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navegación */
+.nav {
+    z-index: 1000;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 #3335;
+}
+
+.nav img {
+    max-width: 90px;
+    float: left; 
+    margin: 10px;
+}
+
+.nav__menu {
+    margin-left: 365px;
+    list-style: none;
+    display: block;
+    text-align: center;
+}
+
+.nav__menu__item {
+    float: left;
+    padding-right: 10px;
+    margin-right: 20px;
+    margin-top: 35px;
+}
+
+.nav__menu__item a {
+    padding: 5px 15px;
+    color: var(--colorfuente);
+    text-decoration: none;
+    font-family: var(--fuente-base);
+    font-size: 1.2em;
+}
+
+.nav__menu__item a:hover {
+    background-color: var(--dorado);
+    border-radius: 5px;
+    transition: background-color 0.43s ease;
+}
+/*Banner*/
+.banner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.57);
+    z-index: 1;
+}
+
+.banner h1{
+    position: relative;
+    z-index: 2;
+    font-family: var(--fuente-titulo);
+    padding: 20px;
+    margin: 0 50px;
+    font-size: 3.7em;
+}
+.banner h1 strong:hover {
+    color: var(--dorado);
+    transition: color 0.5s ease;
+}
+
+/*Contenido*/
+.contenido{
+    background-color: #eee;
+    margin: 100px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: var(--fuente-base);
+    line-height: 1.8em;
+}
+.contenido audio{
+    padding: 10px;
+    width: 90%;
+}
+.contenido >div{
+    text-align: justify;
+    padding: 0 20px;
+}
+.contenido p{
+    margin-bottom: 20px;
+}
+.fecha{
+    padding: 20px;
+    font-style: italic;
+}
+.texto{
+    padding-right:50px;
+    vertical-align: top;
+    width: 48%;
+    display: inline-block;
+}
+.bloqueVideo video{
+    width: 48%;
+    height: auto;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow:  0 0 20px 0 #3335;
+}
+.bloqueVideo img{
+    width: 48%;
+    object-fit: cover;
+    height: auto;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow:  0 0 20px 0 #3335;
+}
+.bloqueVideo img{
+    height: 400px;
+    margin: 50px 0;
+}
+.contenido a{
+    text-decoration: none;
+}
+.contenido a:hover{
+    text-decoration: underline;
+}
+.resultado ul{
+    padding-inline: 50px;
+    margin-bottom: 20px;
+}
+/*Footer*/
+
+footer {
+    background-color: var(--negro);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+    position: relative;
+    
+}
+.bloque{
+    vertical-align: top;
+    margin-left: 107px;
+    padding: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    top: 10px;
+}
+footer::after{
+    content: "";
+    clear: both;
+}
+footer img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+footer h3 {
+    font-family: var(--fuente-titulo);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--dorado);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--fuente-base);
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: var(--dorado);
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #bbb;
+    text-align: center;
+}

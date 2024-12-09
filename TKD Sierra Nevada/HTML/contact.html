@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Diana">
+    <meta name="keywords" content="Taekwondo, Escuela, Artes Marciales">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="/fotos/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet"></head>
+    <title>Contacto - TKD Sierra Nevada</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="nav">
+        <img src="/fotos/logo.jpg" alt= "Logo TKD Sierra Nevada">
+        <nav>
+            <ul class="nav__menu">
+                <li class="nav__menu__item"><a href="home.html">Inicio</a></li>
+                <li class="nav__menu__item"><a href="about.html">Nuestra Escuela</a></li>
+                <li class="nav__menu__item"><a href="clases.html">Clases y Sedes</a></li>
+                <li class="nav__menu__item"><a href="sponsors.html">Patrocinadores</a></li>
+                <li class="nav__menu__item"><a href="blog.html">Blog y Noticias</a></li>
+                <li class="nav__menu__item"><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Encabezado -->
+    
+    <!-- Sección Contacto -->
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <!-- Formulario de Contacto -->
+        <div class="formulario-contacto">
+            <h3>Formulario de Contacto</h3>
+            <form action="procesar-formulario.php" method="POST">
+                <fieldset>
+                    <legend>Registrate</legend>
+                    <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" placeholder="Tu contraseña" required minlength="5" maxlength="30" >
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" placeholder="Tu edad" required min="13" max="100" >
+                
+                <label for="fecha">Fecha actual:</label>
+                <input type="date" id="registro" name="registro">
+                <legend>Sexo</legend>
+                <label for="sexo">Hombre</label>
+                <input type="radio" id="sexo" name="sexo" style="accent-color: #fbc83f;">
+                <label for="sexo">Mujer</label>
+                <input type="radio" id="sexo" name="sexo" style="accent-color: #fbc83f;">
+                </fieldset>
+                <fieldset>
+                    <legend>Preferencia de contacto</legend>
+                    <div class="preferencias-contacto__lista">
+                        <label for="preferencias-medio">Medio de Contacto Preferido:</label>
+                        <select id="preferencias-medio" name="medio_contacto[]" size="4" multiple>
+                            <option value="email" selected>Email</option>
+                            <option value="telefono">Teléfono</option>
+                            <option value="whatsapp">WhatsApp</option>
+                            <option value="redes_sociales">Redes Sociales</option>
+                        </select>
+                        <p>Usa <b>Ctrl</b> o <b>Cmd </b>para seleccionar múltiples opciones.</p>
+                    </div>
+                    <div class="preferencias-contacto__agrupada">
+                        <label for="frecuencia-contacto">Frecuencia de Contacto Preferida:</label>
+                        <select id="frecuencia-contacto" name="frecuencia_contacto">
+                            <optgroup label="Diaria">
+                                <option value="manana">Mañanas</option>
+                                <option value="tarde">Tardes</option>
+                                <option value="noche">Noches</option>
+                            </optgroup>
+                            <optgroup label="Semanal">
+                                <option value="lunes">Entre Semanas</option>
+                                <option value="viernes">Fines de Semana</option>                            
+                            </optgroup>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Mensaje</legend>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje y añada los medios de contacto por el cual desee comunicarse: número de teléfono, correo electónico o redes sociales." rows="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Enviar info</legend>
+                    <button type="submit">Enviar</button>
+                <button type="reset">Reestablecer</button>
+                <div class="terms">
+                    <input type="checkbox" required style="accent-color: #fbc83f;">
+                    <label for="privacy">Acepto la <a href="privacy.html"> Políticas de Privacidad </a> y los <a href="terms.html"> Términos y Condiciones </a></label>
+                </div>
+                </fieldset>
+                
+            </form>
+        </div>
+
+        <!-- Ubicación -->
+        <div class="ubicacion">
+            <h3>Ubicación</h3>
+            <p><span>Dirección: </span> Cam. Puente del Palo, 2, 18194 Churriana de la Vega, Granada.</p>
+            <p><span>Tlf: </span>  642 24 30 24</p>
+            <p><span>Email: </span> taekwondoitfsierranevada@gmail.com</p>
+            <iframe class='mapa' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.186417740248!2d-3.6364079254635464!3d37.14826664800412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fb3a9ffc182f%3A0x42d0c77f192a03b5!2sTaekwon%20Do%20Sierra%20Nevada%20SEDES%20POR%20TODA%20GRANADA%20Y%20ALREDEDORES!5e0!3m2!1ses!2ses!4v1733521808365!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="c_829f8c413c02e98e72dd3da9fd7e27af" class="normal"></div><script type="text/javascript" src="https://www.eltiempo.es/widget/widget_loader/829f8c413c02e98e72dd3da9fd7e27af"></script>
+            <h4>Cualquier día es bueno para entrenar</h4>
+            <iframe class="spoti" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6eWJJ00TXtbRM98q548jHk?utm_source=generator" width="385" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="bloque">
+            <h3>Síguenos en redes</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/tkdsierranevada/?igshid=1cwvj5bn6f27r" target="_blank"> <img src="/fotos/insta.png" alt="Instagram">tkdsierranevada</a></li>
+                <li><a href="https://www.facebook.com/tkdsierranevada/" target="_blank"> <img src="/fotos/face.jpg" alt="Facebook">tkdsierranevada </a></li>
+                <li><a href="https://www.tiktok.com/@tkdsierranevada?lang=es" target="_blank"><img src="/fotos/tik.webp" alt="Tiktok">tkdsierranevada</a></li>
+            </ul>
+        </div>
+        <div class="bloque">
+            <h3>Información legal</h3>
+            <ul>
+                <li><a href="terms.html">Términos y Condiciones</a></li>
+                <li><a href="privacy.html">Políticas de Privacidad</a></li>
+                <li><a href="legacy.html">Aviso Legal</a></li>
+                <li><a href="cookies.html">Políticas de Cookies</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div  class="bloque">
+            <h3>Información de contacto</h3>
+            <ul>
+                <li>Email: info@tkdsierranevada.com</li>
+                <li>Teléfono: +34 123 456 78</li>
+            </ul>
+        </div>
+        <div   class="bloque">
+        <p>&copy; 2024 TKD Sierra Nevada. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- Footer -->
+</body>
+</html>
